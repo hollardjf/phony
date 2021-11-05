@@ -3,15 +3,15 @@ package phony
 // Default dict.
 var dict = map[string][]string{
 	"integer": []string{
-		1,
-		2,
-		3,
-		4,
-		5,
-		6,
-		7,
-		8,
-		9,
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"8",
+		"9",
 	},	
 	"domain.tld": []string{
 		"name",
