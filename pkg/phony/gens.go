@@ -12,6 +12,10 @@ import (
 
 // Default gens.
 var gens = map[string]func(g *Generator, args []string) (string, error){
+	"integer": func(g *Generator, args []string) (string, error) {
+		integer, _ := g.Get("integer")
+		return integer, nil
+	},	
 	"now.utc": func(g *Generator, args []string) (string, error) {
 		return time.Now().UTC().Format(time.RFC3339), nil
 	},
